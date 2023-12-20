@@ -4,11 +4,11 @@ class Cabin(models.Model):
     
     creted_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255)
-    description = models.TextField()
-    image = models.CharField(max_length=255)
-    max_capacity = models.SmallIntegerField()
-    regular_price = models.DecimalField(max_digits=6, decimal_places=2)
-    discount = models.DecimalField(max_digits=6, decimal_places=3)
+    # description = models.TextField()
+    # image = models.CharField(max_length=255)
+    # max_capacity = models.SmallIntegerField()
+    # regular_price = models.DecimalField(max_digits=6, decimal_places=2)
+    # discount = models.DecimalField(max_digits=6, decimal_places=3)
 
 class Guest(models.Model):
 

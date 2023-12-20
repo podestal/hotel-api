@@ -10,17 +10,17 @@ class CabinViewSet(ModelViewSet):
 
 class GuestViewSet(ModelViewSet):
 
-    queryset: models.Guest.objects.all()
-    serializer_class: serializers.GuestSerializer
+    queryset = models.Guest.objects.all()
+    serializer_class = serializers.GuestSerializer
 
 class SettingViewSet(ModelViewSet):
 
-    queryset: models.Setting.objects.all()
-    serializer_class: serializers.SettingSerializer
+    queryset = models.Setting.objects.all()
+    serializer_class = serializers.SettingSerializer
 
 class BookingViewSet(ModelViewSet):
 
-    queryset: models.Booking.objects.all()
-    serializer_class: serializers.BookingSerializer
+    queryset = models.Booking.objects.all()
+    serializer_class = serializers.BookingSerializer
     
 
