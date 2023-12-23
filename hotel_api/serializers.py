@@ -24,3 +24,9 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Booking
         fields = '__all__'
+
+class TodoSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Todo
+        fields = '__all__'

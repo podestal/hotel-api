@@ -23,4 +23,8 @@ class BookingViewSet(ModelViewSet):
     queryset = models.Booking.objects.all()
     serializer_class = serializers.BookingSerializer
     
+class TodoViewSet(ModelViewSet):
+
+    queryset = models.Todo.objects.all()
+    serializer_class = serializers.TodoSerializer
 

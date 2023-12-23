@@ -43,5 +43,11 @@ class Booking(models.Model):
     cabin = models.ForeignKey(Cabin, on_delete=models.CASCADE)
     guest = models.ForeignKey(Guest, on_delete=models.CASCADE)
 
+class Todo(models.Model):
+
+    creted_at = models.DateTimeField(auto_now=True) 
+    text = models.CharField(max_length=255)
+    completed = models.BooleanField(default=False)
+
 
 
